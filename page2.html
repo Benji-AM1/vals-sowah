@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine Processing 💘</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: white;
+}
+
+.box {
+    background: rgba(0,0,0,0.5);
+    padding: 25px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: #e91e63;
+    font-size: 16px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+    <h1>Request Received 💌</h1>
+    <p>Ella Hanson 💘</p>
+
+    <p id="result" style="display:none;">
+        ⚠️ This Valentine package includes extra attention,
+        random compliments, surprise check-ins,
+        and occasional hugs.
+    </p>
+
+    <button id="acceptBtn" style="display:none;" onclick="showFinalMessage()">
+        I accept the side effects 😌
+    </button>
+
+    <p id="finalMsg" style="display:none; font-weight:bold; margin-top:15px;">
+        Premium Valentine treatment ACTIVATED 💘✨
+    </p>
+</div>
+
+<script>
+setTimeout(()=>{
+    document.getElementById("result").style.display="block";
+    document.getElementById("acceptBtn").style.display="block";
+},2000);
+
+function showFinalMessage() {
+    document.getElementById("finalMsg").style.display="block";
+}
+</script>
+
+</body>
+</html>
